@@ -1,9 +1,5 @@
-const ExplorePage=()=>{
-    return (
-        <div>
-            explore page
-        </div>
-    )
-}
+const ExplorePage = () => {
+  return <div>explore page</div>;
+};
 
-export default ExplorePage
+export default ExplorePage;

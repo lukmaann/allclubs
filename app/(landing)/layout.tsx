@@ -1,21 +1,16 @@
-import LandingPageNavbar from "./_components/navbar"
+import LandingPageNavbar from "./_components/navbar";
 
-
-
-
-interface LangingPageLayoutProps{
-    children:React.ReactNode
+interface LangingPageLayoutProps {
+  children: React.ReactNode;
 }
 
+const LandingLayout = ({ children }: LangingPageLayoutProps) => {
+  return (
+    <div>
+      <LandingPageNavbar />
+      {children}
+    </div>
+  );
+};
 
-const LandingLayout=({children}:LangingPageLayoutProps)=>{
-    return (
-        <div >
-            
-            <LandingPageNavbar/>
-            {children}
-        </div>
-    )
-}
-
-export default LandingLayout
+export default LandingLayout;

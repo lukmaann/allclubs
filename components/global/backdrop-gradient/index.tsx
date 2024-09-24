@@ -1,30 +1,25 @@
-
-import { cn } from "@/lib/utils"
+import { cn } from "@/lib/utils";
 
 type BackdropGradientProps = {
-    children: React.ReactNode,
-    className?: string,
-    container?: string
-}
-
-
-
+  children: React.ReactNode;
+  className?: string;
+  container?: string;
+};
 
 const BackdropGradient = ({
-    children, className, container
+  children,
+  className,
+  container,
 }: BackdropGradientProps) => {
-    return (
-        <div className={cn("relative flex flex-col w-full", container)}>
+  return (
+    <div className={cn("relative flex flex-col w-full", container)}>
+      <div
+        className={cn("mx-10 rounded-[50%] radial--blur absolute", className)}
+      />
 
-            <div className={cn("mx-10 rounded-[50%] radial--blur absolute", className)} />
-
-
-            {children}
-
-
-        </div>
-    )
-}
-
+      {children}
+    </div>
+  );
+};
 
 export default BackdropGradient;

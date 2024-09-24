@@ -20,7 +20,7 @@ export default clerkMiddleware(async (auth, req) => {
     const data = await response.json();
     if (data.status === 200 && data) {
       return NextResponse.rewrite(
-        new URL(reqPath, `https://${data.domain}/${reqPath}`)
+        new URL(reqPath, `https://${data.domain}/${reqPath}`),
       );
     }
   }

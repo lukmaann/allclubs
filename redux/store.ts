@@ -5,10 +5,9 @@ import { TypedUseSelectorHook, useSelector } from "react-redux";
 import counterSlice from "./slices/counter-slice";
 
 const rootReducer = combineReducers({
-    counter:counterSlice
+  counter: counterSlice,
 
   //add all your reducers here
-
 });
 
 export const store = configureStore({

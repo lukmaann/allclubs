@@ -21,5 +21,5 @@ export const CreditCard = () => {
         fill="#7A7775"
       />
     </svg>
-  )
-}
+  );
+};
